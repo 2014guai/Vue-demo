@@ -56,7 +56,7 @@
         this.$store.dispatch('savePlan', plan)
         // actions addTotalTime
         this.$store.dispatch('addTotalTime', this.totalTime)
-        // 保存完成后，回到列表页
+        // 返回上一个记录的路由，即保存完成后，回到列表页
         this.$router.go(-1)
       }
     }

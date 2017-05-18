@@ -109,7 +109,25 @@
     },
   ````
   ####components
-  引入其他组件，构建页面
+  引入组件，构建页面   
+  * App.vue主组件
+  * 其他组件
+  ```
+    const routes = [{
+      path: '/', component: Home
+    },
+      {
+        path: '/home', component: Home
+      },
+      {
+        path : '/time-entries', component : TimeEntries,
+        // 子路由
+        children : [{
+          path : 'log-time',
+          component : resolve => require(['./components/LogTime.vue'], resolve)
+        }]
+      }]
+  ```
   
   
   
