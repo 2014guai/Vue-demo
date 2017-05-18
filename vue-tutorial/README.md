@@ -3,7 +3,7 @@
   * vue及周边的库：
     * vue-cli -- 创建项目
     * vue-router -- 实现单页路由
-    * axios 请求node服务器
+    * axios -- 请求node服务器
     * vuex -- 管理数据流
   * 原文地址：https://juejin.im/post/583d1fe00ce463006baca2fa
 
